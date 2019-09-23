@@ -22,9 +22,9 @@ backend Redis_tcp_ipvANY
     server          redis2 10.10.10.11:6379 check inter 1000  maxconn 1024
     server          redis3 10.10.10.12:6379 check inter 1000  maxconn 1024
     
-    ------------------------------------------- With AUTH --------------------------------------------------------------------
+------------------------------------------- With AUTH --------------------------------------------------------------------
     
-    frontend Redis
+frontend Redis
     bind            *:6378 name redis
     mode            tcp
     log         global
